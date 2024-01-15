@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-tabela-cobrancas {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    width: 33%;
+
+    @media screen and (max-width: 1400px) {
+        gap: 15px;
+    }
+}
+
+.container-tabela {
+    width: 100%;
+    height: 305px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title-cobrancas {
+    display: flex;
+    height: 8rem;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.container-verTodos {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DA0175;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.left-title {
+    width: 250px;
+    justify-content: flex-start;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.right-score-pag {
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    color: #1FA7AF;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.right-score-pag-venc {
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    color: #971D1D;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFEFEF;
+}
+
+.right-score-pag-prev {
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    color: #C5A605;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FCF6DC;
+}
+
+
+.container-cobrancas-pag {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #EEF6F6;
+}
+
+.container-cobrancas-venc {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #FFEFEF;
+}
+
+.container-cobrancas-prev {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #FCF6DC;
+}
+
+
+.container-valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+.container-valores h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-valores p {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.container-img-cobrancas {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-venc {
+    display: flex;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #FFEFEF;
+    color: #971D1D;
+}
+
+.status-paga {
+    display: flex;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #EEF6F6;
+    color: #1FA7AF;
+}
+
+.status-prev {
+    display: flex;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #FCF6DC;
+    color: #C5A605;
+}
+
+.status-em-dia {
+    display: flex;
+    height: 30px;
+    width: 130px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: #EEF6F6;
+    color: #1FA7AF;
+}
+
+.status-inadimplente {
+    display: flex;
+    height: 30px;
+    width: 130px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: #FFEFEF;
+    color: #971D1D;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    margin-top: -15px;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.home-table-charges {
+    height: 700px;
+}
+
+.home-ver-todos {
+    display: flex;
+    color: #DA0175;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+}
+
+
+.home-table-charges tbody {
+    height: 40px;
+}
+
+
+.error-inputs input,
+.error-inputs textarea {
+    border: 2px solid red;
+}

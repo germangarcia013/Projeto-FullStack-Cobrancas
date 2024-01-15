@@ -1,0 +1,39 @@
+.main-header-home {
+    display: flex;
+    height: 72px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ACD9C5;
+    padding: 0 65px;
+}
+
+.container-perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0E8750;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-header h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.title-header p {
+    padding-top: 40px;
+    color: #0E8750;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.detalhes-cliente {
+    display: flex;
+    gap: 20px;
+}
+
+.detalhes-cliente :last-child {
+    color: #747488;
+}

@@ -1,0 +1,9 @@
+.main-register {
+    display: flex;
+}
+
+.step-next {
+    margin-top: 150px;
+    width: 260px;
+    height: 30px;
+}

@@ -1,0 +1,21 @@
+.container-sucess {
+    height: 512px;
+    width: 600px;
+    background-color: #F0F0F5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+.container-sucess img {
+    height: 104px;
+}
+
+
+.container-sucess p {
+    font-size: 24px;
+    font-weight: bold;
+}

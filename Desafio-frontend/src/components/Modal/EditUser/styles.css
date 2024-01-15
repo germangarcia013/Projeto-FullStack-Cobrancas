@@ -1,0 +1,28 @@
+.btn-edit-cad {
+    background-color: #DA0175;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: #F8F8F9;
+    font-size: 20px;
+
+}
+
+span {
+    color: white;
+}
+
+.inputMask {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+}
+
+.inputMask:focus {
+    border: 2px solid rgb(75, 100, 153);
+    outline: none;
+}

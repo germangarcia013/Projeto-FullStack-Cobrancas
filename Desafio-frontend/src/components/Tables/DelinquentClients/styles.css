@@ -1,0 +1,74 @@
+.container-tabela-customer {
+    width: 50%;
+    height: 340px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+
+    @media screen and (max-width: 1400px) {
+        height: 250px;
+    }
+}
+
+.sub-title-cobrancas-customer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+
+    @media screen and (max-width: 1400px) {
+        height: 40px;
+    }
+}
+
+.left-title-costumer {
+    display: flex;
+    gap: 15px;
+}
+
+.sub-title-cobrancas-customer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3F3F55;
+
+}
+
+.right-score-pag-costumer {
+    width: 13%;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    color: #971D1D;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.home-table-clients th {
+    text-transform: none;
+    font-size: 16px;
+}
+
+.home-table-clients {
+    padding: 0 10px;
+    height: 260px;
+
+    @media screen and (max-width: 1400px) {
+        height: 180px;
+    }
+}
+
+.home-table-clients td {
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home-table-clients tbody {
+    height: 40px;
+
+    @media screen and (max-width: 1400px) {
+        height: 10px;
+    }
+}

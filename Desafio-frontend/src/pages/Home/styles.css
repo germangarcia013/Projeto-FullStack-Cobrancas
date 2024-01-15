@@ -1,0 +1,58 @@
+.main-home {
+    display: flex;
+    background-color: #F8F8F9;
+    min-height: 100vh;
+    min-height: 100vh;
+
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 108px);
+    min-height: 100vh;
+}
+
+.container-header {
+    padding: 10px 40px;
+    width: 100%;
+    height: 82px;
+
+    @media screen and (max-width: 1400px) {
+        padding: 0px 40px;
+    }
+}
+
+.home-tables {
+    padding: 5px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    height: calc(100% - 82px);
+
+    @media screen and (max-width: 1400px) {
+        gap: 10px;
+        padding: 0px 100px;
+    }
+}
+
+.container-charges-tables {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    table-layout: fixed;
+
+    @media screen and (max-width: 1400px) {
+        gap: 10px;
+    }
+}
+
+.container-clients-tablet {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    table-layout: fixed;
+}

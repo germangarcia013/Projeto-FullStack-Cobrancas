@@ -1,0 +1,6 @@
+.table-container {
+    max-width: 1360px;
+    /* Largura máxima */
+    overflow-x: auto;
+    /* Adicionando barra de rolagem horizontal quando necessário */
+}

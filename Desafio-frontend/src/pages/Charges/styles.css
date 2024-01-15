@@ -1,0 +1,26 @@
+.container-main-cobranca {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #F8F8F9;
+}
+
+.container-right-search-charge {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 350px;
+}
+
+.table-charges {
+    max-height: 750px;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    height: 720px;
+
+    @media screen and (max-width: 1400px) {
+        max-height: 570px;
+        overflow-y: auto;
+    }
+}
