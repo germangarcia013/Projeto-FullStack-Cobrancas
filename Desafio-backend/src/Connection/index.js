@@ -1,5 +1,6 @@
-require('dotenv').config();
+require('dotenv').config()
 
+console.log('HOST:', JSON.stringify(process.env.DB_HOST))
 const knex = require('knex')({
     client: 'pg',
     connection: {

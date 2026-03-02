@@ -1,4 +1,5 @@
-require('dotenv').config();
+require('dotenv').config()
+
 const cors = require('cors');
 const express = require('express');
 const rotas = require('./Routes/rotas')
@@ -12,4 +13,4 @@ app.use(cors());
 
 app.use(rotas);
 
-app.listen(process.env.PORT | 3001);
+app.listen(process.env.PORT || 3001);
