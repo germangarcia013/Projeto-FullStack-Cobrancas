@@ -109,7 +109,7 @@ export default function AllClients({ searchInput }) {
 
                 <>
                     <Tbody >
-                        {setRegisterClients && !filteredClients.some(client => client.nome !== registerClients.nome) ? (
+                        {!filteredClients && !filteredClients.some(client => client.nome !== registerClients.nome) ? (
                             <SearchNotFound />
                         ) : (
 

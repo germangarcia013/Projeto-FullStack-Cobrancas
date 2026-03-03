@@ -121,7 +121,7 @@ export default function AllCharges({ searchInput }) {
                     </Thead>
 
                     <Tbody cursor='pointer' >
-                        {!filteredCharge.some(charge => charge.nome_cliente !== addTransactionCharge.nome_cliente) ? (
+                        {!filteredCharge && !filteredCharge.some(charge => charge.nome_cliente !== addTransactionCharge.nome_cliente) ? (
                             <SearchNotFound />
                         ) : (
                             filteredCharge.map((charge) => (

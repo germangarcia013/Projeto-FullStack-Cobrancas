@@ -49,7 +49,7 @@ export default function Register() {
                     email: email
                 }
             )
-
+            
             if (!response.data) {
                 setUserInfo({ nome, email });
                 navigate('/register-password');

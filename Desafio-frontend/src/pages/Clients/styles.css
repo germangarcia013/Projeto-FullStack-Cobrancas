@@ -74,14 +74,14 @@ img {
 }
 
 .table-clients {
-    max-height: 750px;
+    max-height: 400px;
     overflow-y: auto;
     background-color: #FFFFFF;
     border-radius: 30px;
     height: 720px;
 
-    @media screen and (max-width: 1400px) {
-        max-height: 570px;
+    @media screen and (min-width: 1400px) {
+        min-height: 570px;
         overflow: auto;
     }
 }

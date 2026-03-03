@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: 'https://lazy-teal-caridea-sock.cyclic.app/',
+    baseURL: 'http://localhost:3000',
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json'

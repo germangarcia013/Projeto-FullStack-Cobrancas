@@ -4,7 +4,7 @@ import Search from "../../assets/search.svg"
 
 export default function handleSearch() {
     return (
-        <Flex flexDirection='column' alignItems='center' justifyContent='center' position='fixed' w='80%' h='50%'>
+        <Flex flexDirection='column' alignItems='center' justifyContent='center' position='fixed' w='70%' h='40%'>
             <Box display='flex' justifyContent='center' alignItems='center' flexDirection='column'  >
                 <Img src={Search} />
                 <Text color='#F08889' fontSize='28px'>Nenhum resultado foi encontrado!</Text>
