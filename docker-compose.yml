@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./Desafio-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Desafio-backend:/app
+    working_dir: /app
+    command: sh start.sh
+    environment:
+      JWT_PASS: ${JWT_PASS:-default_secret}
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+      POSTGRES_DB: ${DB_DATABASE:-meu_banco}
+    restart: always
