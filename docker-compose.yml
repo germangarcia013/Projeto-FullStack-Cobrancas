@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   backend:
     build: ./Desafio-backend
@@ -11,7 +9,12 @@ services:
     working_dir: /app
     command: sh start.sh
     environment:
-      JWT_PASS: ${JWT_PASS:-default_secret}
+        DB_HOST: db
+        DB_PORT: 5432
+        DB_USER: postgres
+        DB_PASSWORD: postgres
+        DB_DATABASE: meu_banco
+        JWT_PASS: default_secret
     depends_on:
       - db
     restart: always
@@ -21,9 +24,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-       DB_HOST: db
-       DB_PORT: 5432
-       DB_USER: ${DB_USER:-postgres}
-       DB_PASSWORD: ${DB_PASSWORD:-postgres}
-       DB_DATABASE: ${DB_DATABASE:-meu_banco}
+       POSTGRES_USER: postgres
+       POSTGRES_PASSWORD: postgres
+       POSTGRES_DB: meu_banco
     restart: always
