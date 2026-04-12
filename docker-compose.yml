@@ -21,7 +21,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: ${DB_USER:-postgres}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
-      POSTGRES_DB: ${DB_DATABASE:-meu_banco}
+       DB_HOST: db
+       DB_PORT: 5432
+       DB_USER: ${DB_USER:-postgres}
+       DB_PASSWORD: ${DB_PASSWORD:-postgres}
+       DB_DATABASE: ${DB_DATABASE:-meu_banco}
     restart: always
