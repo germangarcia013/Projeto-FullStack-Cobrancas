@@ -9,12 +9,13 @@ services:
     working_dir: /app
     command: sh start.sh
     environment:
-        DB_HOST: db
-        DB_PORT: 5432
-        DB_USER: postgres
-        DB_PASSWORD: postgres
-        DB_DATABASE: meu_banco
-        JWT_PASS: default_secret
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_DATABASE: meu_banco
+      JWT_PASS: default_secret
+      PORT: 3000
     depends_on:
       - db
     restart: always
@@ -24,7 +25,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-       POSTGRES_USER: postgres
-       POSTGRES_PASSWORD: postgres
-       POSTGRES_DB: meu_banco
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: meu_banco
     restart: always

@@ -1,4 +1,3 @@
-#!/bin/sh
 echo "Esperando banco..."
 npx wait-port db:5432
 
