@@ -7,6 +7,7 @@ services:
       - "3000:3000"
     volumes:
       - ./Desafio-backend:/app
+      - /app/node_modules
     working_dir: /app
     command: sh start.sh
     environment:
