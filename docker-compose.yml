@@ -19,7 +19,16 @@ services:
     depends_on:
       - db
     restart: always
-
+  frontend:
+    build: ./Desafio-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./Desafio-frontend:/app
+      - /app/node_modules
+    working_dir: /app
+    command: npm run dev -- --host
+    restart: always
   db:
     image: postgres:15
     ports:
