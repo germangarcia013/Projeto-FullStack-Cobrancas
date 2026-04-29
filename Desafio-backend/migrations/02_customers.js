@@ -12,9 +12,10 @@ exports.up = function(knex) {
     table.text('bairro');
     table.text('cidade');
     table.text('status');
+    table.text("endereco")
 
     table
-      .integer('associado_id')
+      .integer('usuario_id')
       .unsigned()
       .references('id')
       .inTable('usuarios')
